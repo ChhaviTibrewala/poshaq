@@ -1,0 +1,464 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    color: #213546;
+    background: #eeeeee;
+    font-family: 'Montserrat', arial, verdana;
+}
+
+a {
+    color: #4F84C4;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #00539C;
+    outline: none;
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1050px;
+}
+
+
+/*******************************/
+/********** Header CSS *********/
+/*******************************/
+.header {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #2f4e70;
+
+}
+
+
+@media (min-width: 1200px) {
+    .header .container-fluid {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.header .brand {
+    position: relative;
+}
+
+.header .brand img {
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+   
+    
+    .header .navbar-brand {
+        display: none;
+    }
+    
+    .header .navbar-light a.nav-link {
+        position: relative;
+        padding: 8px 10px;
+        color: #213546;
+        font-size: 16px;
+        z-index: 1;
+    }
+    
+    .header .navbar-light a.nav-link:hover,
+    .header .navbar-light a.nav-link.active {
+        color: #4F84C4;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .brand {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar .topbar-col {
+        margin: 0;
+    }
+    
+    .header .topbar .topbar-social {
+        margin-top: 5px;
+    }
+    
+    .header .navbar {
+        
+        border: 1px solid #eeeeee;
+        z-index: 1;
+    }
+    
+    .header a.nav-link {
+        padding: 5px 0;
+    }
+    
+    .header .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+.header .navbar .btn {
+    position: relative;
+    margin-left: 15px;
+    padding: 12px 25px 10px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(#4F84C4, #00539C);
+    transition: .5s;
+}
+
+
+.header .collapse .navbar-nav .nav-item{
+
+    font-weight: bold;
+    padding-right: 50px;
+    vertical-align: middle;
+    color: white;
+}
+
+.header .collapse .navbar-nav img{
+    height: 30px;
+    width: 30px;
+    padding-left: 5px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+}
+
+/*******************************/
+/*********** Our Company CSS **********/
+/*******************************/
+.hero {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 45px 60px;
+    }
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.hero p {
+    margin: 10px 0 20px 0;
+    font-size: 16px;
+    font-weight: 350;
+}
+
+.hero img {
+    width: 500px;
+    height: 300px;
+    float: right;
+}
+
+@media (min-width: 1200px) {
+  .hero img {
+    height: 300px;
+    width: 500px;
+
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero img {
+      height: 300px;
+      width: 500px;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero img {
+      height: 250px;
+      width: 350px;
+    }
+
+}
+
+/*******************************/
+/******* Goals ********/
+/*******************************/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    left: calc(50% - 30px);
+    bottom: 0;
+    background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);
+    border-radius: 100%;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+    .about .container-fluid {
+        padding: 0;
+    }
+    
+    .about .row {
+        margin: 0;
+    }
+    
+    .about .col-md-6:first-child {
+        padding: 0;
+    }
+    
+    .about .col-md-6:last-child {
+        padding: 0 60px;
+    }
+}
+l
+.about h2.section-title {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.about h2.section-title::after {
+    position: relative;
+    content: "";
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);
+    border-radius: 0 100% 100% 0;
+}
+
+.about p {
+    color: #213546;
+    font-size: 16px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.about img {
+    max-width: 100%;
+    position: relative;
+}
+
+@media(max-width: 767.98px) {
+    .about img {
+        margin-bottom: 30px;
+        border-radius: 30px 30px 0 0;
+    }
+}
+
+.about h2{
+    font-weight: bold;
+}
+
+
+
+/*******************************/
+/********* Goals CSS *********/
+/*******************************/
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+@media (min-width: 768px) {
+    .service {
+        padding: 45px 60px 15px 60px;
+    }
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    padding: 25px 30px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .03) 96%, rgba(0, 0, 0, .1), rgba(0, 0, 0, .2));
+    border-radius: 30px 30px 0 0;
+    margin-bottom: 30px;
+    text-align: center;
+    min-height: 420px; 
+}
+
+.service .service-item:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .03) 96%, rgba(0, 0, 0, .2), rgba(0, 0, 0, .4));
+}
+
+.service .service-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.service .service-item img {
+    height: 80px;
+}
+
+.service .service-item p {
+    position: relative;
+    margin: 20px 0 0 0;
+    font-size: 16px;
+}
+
+
+
+
+
+/*******************************/
+/*********seller app **********/
+/*******************************/
+
+
+.consulting_section .col-sm-6 img{
+
+    height: 300px;
+    width: 400px;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.consulting_section h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    padding-top: 30px;
+    background: #2c3035;
+    height: 300px;
+}
+
+.footer .footer-link {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+@media(min-width: 992px) {
+    .footer .container:first-child {
+        max-width: 960px;
+        margin-bottom: 30px;
+    }
+    
+    .footer .footer-link {
+        padding: 0 30px;
+    }
+}
+
+.footer .footer-link h2 {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.footer .footer-link h2::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #999999, #ffffff, #999999);
+    border-radius: 0 100% 100% 0; 
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999999;
+    
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+    color: #ffffff;
+}
+
+
+
